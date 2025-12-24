@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMAS Zini!</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <div class="xmas-game-container zini-container">
+        <h1>XMAS Zini!</h1>
+        <p>A custom crossword generated just for you.</p>
+
+        <div class="zini-main-area">
+            <!-- 
+               CRITICAL FIX: 
+               id="zini-grid" (Matches JS)
+               class="zini-grid" (Matches CSS)
+            -->
+            <div id="zini-grid" class="zini-grid" tabindex="0"></div>
+
+            <div class="zini-clues-container">
+                <div class="zini-clue-list">
+                    <h2>ACROSS</h2>
+                    <ul id="clues-across"></ul>
+                </div>
+                <div class="zini-clue-list">
+                    <h2>DOWN</h2>
+                    <ul id="clues-down"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="clue-box" class="clue-box hidden">
+            <p><strong>FINAL MESSAGE:</strong><br></p>
+            <h2 style="margin-top: 10px;">I love you so much Alix, Merry Christmas</h2>
+        </div>
+        
+        <a href="../../index.html" id="continue-button" class="continue-button hidden">Back to Home</a>
+    </div>
+
+    <script src="zini-game.js"></script>
+
+</body>
+</html>

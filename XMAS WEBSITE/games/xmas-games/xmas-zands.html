@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMAS Zands!</title>
+    <!-- Link to the ONE stylesheet, which is two levels up -->
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+    <div class="xmas-game-container">
+        <h1>XMAS Zands!</h1>
+        
+        <!-- Today's Clue -->
+        <div id="zands-clue" class="zands-clue-box">
+            <p>Today's Clue: <strong>Capital City!</strong></p>
+        </div>
+
+        <!-- The 8x6 game grid -->
+        <div id="zands-grid" class="zands-grid">
+            <!-- JavaScript will fill this with 48 tiles -->
+        </div>
+
+        <!-- 
+          REMOVED: The hint container and button were here.
+          They are now gone.
+        -->
+
+        <!-- Found Words List -->
+        <div class="zands-found-words">
+            <div id="spangram-box" class="zands-found-item hidden"></div>
+            <ul id="theme-words-list">
+                <!-- JS will fill this -->
+            </ul>
+        </div>
+        
+        <!-- Hidden Clue/Continue -->
+        <div id="clue-box" class="clue-box hidden">
+        </div>
+        
+        <a href="xmas-zini.html" id="continue-button" class="continue-button hidden">Next Puzzle</a>
+    </div>
+
+    <!-- Link to the new JavaScript file for this game -->
+    <script src="zands-game.js"></script>
+
+</body>
+</html>
