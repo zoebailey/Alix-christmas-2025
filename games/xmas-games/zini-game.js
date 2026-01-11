@@ -50,11 +50,23 @@ const WORD_DATA = [
     { word: "HENRIETTA", clue: "The name of our highland cow" },
     { word: "MARYLAND", clue: "Old Line State" },
     { word: "COMMANDERS", clue: "Team that is NOT from WA"},
+
+    // V2
+    { word: "DANIELS", clue: "Jayden ___"},
+    { word: "SNACKWRAP", clue: "McDonald's order, not chicken nuggets"},
+    { word: "BANNER", clue: "School you worked at"},
+    { word: "SOCIALWORK", clue: "Your major"},
+    { word: "SWAG", clue: "Your minor"},
+    { word: "SNORE", clue: "What I do at night, sorry"},
+    { word: "MAX", clue: "Your favorite stuffed animal"}
 ];
 
 // Sort words by length
 let availableWords = WORD_DATA.filter(w => w.word.length <= GRID_SIZE)
                               .sort((a, b) => b.word.length - a.word.length);
+
+// V2
+let suppressSelect = false;
 
 // --- GAME STATE ---
 const gridEl = document.getElementById("zini-grid");
@@ -314,17 +326,28 @@ function buildClueLists() {
     });
 }
 
+// V2
 function selectCell(r, c) {
+    if (suppressSelect) {
+        activeCell = { row: r, col: c };
+        highlight();
+        return;
+    }
+
     if (activeCell.row === r && activeCell.col === c) {
         let newDir = activeDirection === "across" ? "down" : "across";
-        if ((newDir === "across" && hasWord(r,c,"across")) || (newDir === "down" && hasWord(r,c,"down"))) {
+        if (
+            (newDir === "across" && hasWord(r, c, "across")) ||
+            (newDir === "down" && hasWord(r, c, "down"))
+        ) {
             activeDirection = newDir;
         }
     } else {
         activeCell = { row: r, col: c };
-        if (hasWord(r,c,"across")) activeDirection = "across";
+        if (hasWord(r, c, "across")) activeDirection = "across";
         else activeDirection = "down";
     }
+
     highlight();
 }
 
@@ -399,18 +422,27 @@ function handleKey(e) {
     }
 }
 
+// V2
 function moveFocus(dir) {
     let r = activeCell.row, c = activeCell.col;
     let found = false;
-    for(let i=0; i<GRID_SIZE; i++) { 
+
+    for (let i = 0; i < GRID_SIZE; i++) {
         if (activeDirection === "across") c += dir;
         else r += dir;
+
         if (r < 0 || r >= GRID_SIZE || c < 0 || c >= GRID_SIZE) break;
-        if (!gridState[r][c].isBlack) { found = true; break; }
+        if (!gridState[r][c].isBlack) {
+            found = true;
+            break;
+        }
     }
+
     if (found) {
+        suppressSelect = true;
         activeCell = { row: r, col: c };
         gridState[r][c].input.focus();
+        suppressSelect = false;
         highlight();
     }
 }

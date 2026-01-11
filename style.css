@@ -521,6 +521,8 @@ XMAS ZANDS (STRANDS) - GAME STYLES
     max-width: 360px; /* Adjusted width */
     margin-bottom: 20px;
     user-select: none;
+    /* V2 */
+    aspect-ratio: 6/8;
 }
 
 /* Find this existing rule and replace it */
@@ -782,4 +784,14 @@ XMAS ZINI (FINAL FIXED STYLES)
     .zini-clue-list {
         height: 200px;
     }
+}
+
+/* V2 */
+#hint-button {
+    padding: 5px 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    background-color: lightgray;
+    border-radius: 8px;
+    cursor: pointer;
 }

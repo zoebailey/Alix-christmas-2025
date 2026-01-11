@@ -37,18 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
             gridLetters: [
                 ['S', 'R', 'O', 'B', 'A', 'B'],
                 ['T', 'E', 'G', 'T', 'O', 'Y'],
-                ['U', 'R', 'T', 'F', 'E', 'L'],
-                ['F', 'E', 'R', 'U', 'G', 'G'],
-                ['D', 'F', 'E', 'D', 'A', 'N'],
+                ['U', 'R', 'T', 'F', 'G', 'L'],
+                ['F', 'E', 'R', 'U', 'G', 'E'],
+                ['D', 'F', 'E', 'D', 'R', 'N'],
                 ['E', 'I', 'V', 'A', 'A', 'I'],
                 ['A', 'S', 'T', 'C', 'H', 'M'],
                 ['R', 'L', 'I', 'T', 'L', 'A']
             ],
             wordPaths: {
-                "STUFFEDANIMAL": [[0,0], [1,0], [2,0], [3,0], [4,1], [4,2], [4,3], [4,4], [4,5], [5,5], [6,5], [7,5], [7,4], [2,5]], 
+                "STUFFEDANIMAL": [[0,0], [1,0], [2,0], [3,0], [4,1], [4,2], [4,3], [5,4], [4,5], [5,5], [5,6], [5,7]], 
                 "ROGER": [[0,1], [0,2], [1,2], [1,1], [2,1]],
                 "BABYOTTER": [[0,3], [0,4], [0,5], [1,5], [1,4], [1,3], [2,2], [3,1], [3,2]],
-                "FUGGLE": [[2,3], [3,3], [3,4], [3,5], [2,5], [2,4]], 
+                "FUGGLER": [[2,3], [3,3], [3,4], [2,4], [2,5], [3,5], [4,4]], 
                 "DIVA": [[4,0], [5,1], [5,2], [5,3]],
                 "EARL": [[5,0], [6,0], [7,0], [7,1]],
                 "STITCH": [[6,1], [6,2], [7,2], [7,3], [6,3], [6,4]]
@@ -102,7 +102,157 @@ document.addEventListener("DOMContentLoaded", () => {
             "TARGET": [[2,0], [3,0], [4,0], [5,0], [6,0], [6,1]],
             "SALLYS": [[6,2], [6,3], [7,3], [7,2], [7,1], [7,0]]
         }
-    }
+    },
+
+    // V2
+    {
+            id: "fruit_basket",
+            themeClue: "Picking Healthy Snacks",
+            spangram: "FRUITBASKET",
+            themeWords: ["BLUEBERRY", "KIWI", "HONEYDEW", "APPLE", "PEACH", "ORANGE"],
+            gridLetters: [
+                ['F', 'R', 'A', 'O', 'R', 'A'],
+                ['B', 'U', 'P', 'P', 'E', 'N'],
+                ['L', 'I', 'P', 'A', 'C', 'G'],
+                ['U', 'T', 'L', 'E', 'H', 'E'],
+                ['E', 'B', 'A', 'S', 'K', 'E'],
+                ['B', 'E', 'R', 'R', 'Y', 'T'],
+                ['K', 'I', 'E', 'N', 'O', 'H'],
+                ['I', 'W', 'Y', 'D', 'E', 'W']
+            ],
+            wordPaths: {
+                "BLUEBERRY":   [[1,0], [2,0], [3,0], [4,0], [5,0], [5,1], [5,2], [5,3], [5,4]],
+                "KIWI":    [[6,0], [7,0], [7,1], [6,1]],
+                "HONEYDEW": [[6,5], [6,4], [6,3], [6,2], [7,2], [7,3], [7,4], [7,5]],
+                "APPLE": [[0,2], [1,2], [2,2], [3,2], [3,3]],
+                "PEACH": [[1,3], [1,4], [2,3], [2,4], [3,4]],
+                "ORANGE": [[0,3], [0,4], [0,5], [1,5], [2,5], [3,5]],
+                "FRUITBASKET": [[0,0], [0,1], [1,1], [2,1], [3,1], [4,1], [4,2], [4,3], [4,4], [4,5], [5,5]]
+            }
+        },
+        {
+            id: "ru_paul",
+            themeClue: "Lip Sync For Your Life",
+            spangram: "RUPAULQUEENS",
+            themeWords: ["SASHA", "JINKX", "TRIXIE", "KATYA", "EDWARDS", "TATIANNA"],
+            gridLetters: [
+                ['S', 'A', 'J', 'I', 'N', 'R'],
+                ['S', 'H', 'A', 'X', 'K', 'U'],
+                ['U', 'Q', 'L', 'U', 'A', 'P'],
+                ['E', 'E', 'T', 'I', 'E', 'K'],
+                ['E', 'D', 'R', 'X', 'A', 'A'],
+                ['N', 'W', 'I', 'T', 'Y', 'T'],
+                ['S', 'A', 'A', 'T', 'A', 'N'],
+                ['R', 'D', 'S', 'I', 'A', 'N']
+            ],
+            wordPaths: {
+                "SASHA":   [[0,0], [0,1], [1,0], [1,1], [1,2]],
+                "JINKX":    [[0,2], [0,3], [0,4], [1,4], [1,3]],
+                "TRIXIE": [[3,2], [4,2], [5,2], [4,3], [3,3], [3,4]],
+                "KATYA": [[3,5], [4,5], [5,5], [5,4], [4,4]],
+                "EDWARDS": [[3,1], [4,1], [5,1], [6,1], [7,0], [7,1], [7,2]],
+                "TATIANNA": [[5,3], [6,2], [6,3], [7,3], [7,4], [7,5], [6,5], [6,4]],
+                "RUPAULQUEENS": [[0,5], [1,5], [2,5], [2,4], [2,3], [2,2], [2,1], [2,0], [3,0], [4,0], [5,0], [6,0]]
+            }
+        },
+        {
+            id: "medicine_cabinet",
+            themeClue: "Pharmacy Stop",
+            spangram: "TAKEYOURPILLS",
+            themeWords: ["LAMOTRAIGINE", "ALLERGY", "CONCERTA", "BUPROPION"],
+            gridLetters: [
+                ['L', 'M', 'O', 'S', 'L', 'N'],
+                ['A', 'R', 'T', 'C', 'L', 'O'],
+                ['I', 'A', 'L', 'O', 'I', 'I'],
+                ['G', 'Y', 'L', 'N', 'P', 'P'],
+                ['I', 'G', 'E', 'C', 'R', 'O'],
+                ['N', 'R', 'R', 'E', 'U', 'R'],
+                ['E', 'A', 'T', 'Y', 'O', 'P'],
+                ['T', 'A', 'K', 'E', 'B', 'U']
+            ],
+            wordPaths: {
+                "LAMOTRAIGINE":   [[0,0], [1,0], [0,1], [0,2], [1,2], [1,1], [2,0], [3,0], [4,0], [5,0], [6,0]],
+                "ALLERGY":    [[2,1], [2,2], [3,2], [4,2], [5,1], [4,1], [3,1]],
+                "CONCERTA": [[1,3], [2,3], [3,3], [4,3], [5,3], [5,2], [6,2], [6,1]],
+                "BUPROPION": [[7,4], [7,5], [6,5], [5,5], [4,5], [3,5], [2,5], [1,5], [0,5]],
+                "TAKEYOURPILLS": [[7,0], [7,1], [7,2], [7,3], [6,3], [6,4], [5,4], [3,4], [2,4], [1,4], [0,4], [0,3]],
+            }
+        },
+        {
+            id: "otter_mania",
+            themeClue: "Cute Rafts",
+            spangram: "OTTERMANIA",
+            themeWords: ["GIANT", "SMALLLCLAW", "NORTHAMERICAN", "RIVER", "MARINE"],
+            gridLetters: [
+                ['O', 'G', 'S', 'M', 'A', 'L'],
+                ['T', 'I', 'T', 'W', 'C', 'L'],
+                ['T', 'A', 'N', 'A', 'L', 'A'],
+                ['E', 'R', 'M', 'A', 'N', 'I'],
+                ['N', 'E', 'R', 'R', 'I', 'V'],
+                ['O', 'M', 'I', 'M', 'R', 'E'],
+                ['R', 'A', 'C', 'A', 'R', 'I'],
+                ['T', 'H', 'A', 'N', 'E', 'N']
+            ],
+            wordPaths: {
+                "GIANT":   [[0,1], [1,1], [2,1], [2,2], [1,2]],
+                "SMALLCLAW":    [[0,2], [0,3], [0,4], [0,5], [1,5], [1,4], [2,4], [2,3], [1,3]],
+                "NORTHAMERICAN": [[4,0], [5,0], [6,0], [7,0], [7,1], [6,1], [5,1], [4,1], [4,2], [5,2], [6,2], [7,2], [7,3]],
+                "RIVER": [[4,3], [4,4], [4,5], [5,5], [5,4]],
+                "MARINE": [[5,3], [6,3], [6,4], [6,5], [7,5], [7,4]],
+                "OTTERMANIA": [[0,0], [1,0], [2,0], [3,0], [3,1], [3,2], [3,3], [3,4], [3,5], [2,5]],
+            }
+        },
+        {
+            id: "small_pets",
+            themeClue: "Friends From Home",
+            spangram: "SMALLFRIENDS",
+            themeWords: ["MARGOT", "AXEL", "LILO", "BEBE", "STITCH", "TRAVELER", "FERN"],
+            gridLetters: [
+                ['M', 'A', 'L', 'I', 'L', 'S'],
+                ['G', 'R', 'B', 'E', 'O', 'M'],
+                ['O', 'A', 'L', 'B', 'E', 'A'],
+                ['T', 'X', 'E', 'L', 'E', 'L'],
+                ['C', 'H', 'R', 'E', 'V', 'L'],
+                ['T', 'I', 'T', 'S', 'A', 'F'],
+                ['E', 'R', 'N', 'T', 'R', 'R'],
+                ['F', 'S', 'D', 'N', 'E', 'I']
+            ],
+            wordPaths: {
+                "MARGOT":   [[0,0], [0,1], [1,1], [1,0], [2,0], [3,0]],
+                "AXEL":    [[2,1], [3,1], [3,2], [2,2]],
+                "LILO": [[0,2], [0,3], [0,4], [1,4]],
+                "BEBE": [[1,2], [1,3], [2,3], [2,4]],
+                "STITCH": [[5,3], [5,2], [5,1], [5,0], [4,0], [4,1]],
+                "TRAVELER": [[6,3], [6,4], [5,4], [4,4], [3,4], [3,3], [4,3], [4,2]],
+                "FERN": [[7,0], [6,0], [6,1], [6,2]],
+                "SMALLFRIENDS": [[0,5], [1,5], [2,5], [3,5], [4,5], [5,5], [6,5], [7,5], [7,4], [7,3], [7,2], [7,1]]
+            }
+        },
+        {
+            id: "county_fair",
+            themeClue: "23 in MD, 55 in WV",
+            spangram: "COUNTYFAIR",
+            themeWords: ["MUSIC", "PIGRACES", "FOOD", "RIDES", "PRIZE", "FARMANIMALS"],
+            gridLetters: [
+                ['M', 'U', 'R', 'A', 'M', 'I'],
+                ['I', 'S', 'I', 'L', 'S', 'N'],
+                ['C', 'G', 'R', 'A', 'P', 'A'],
+                ['P', 'I', 'A', 'F', 'R', 'M'],
+                ['F', 'S', 'C', 'Y', 'I', 'R'],
+                ['O', 'R', 'E', 'T', 'Z', 'A'],
+                ['O', 'I', 'N', 'U', 'E', 'F'],
+                ['D', 'D', 'E', 'S', 'O', 'C']
+            ],
+            wordPaths: {
+                "MUSIC":   [[0,0], [0,1], [1,1], [1,0], [2,0]],
+                "PIGRACES":    [[3,0], [3,1], [2,1], [2,2], [3,2], [4,2], [5,2], [4,1]],
+                "FOOD": [[4,0], [5,0], [6,0], [7,0]],
+                "RIDES": [[5,1], [6,1], [7,1], [7,2], [7,3]],
+                "PRIZE": [[2,4], [3,4], [4,4], [5,4], [6,4]],
+                "FARMANIMALS": [[6,5], [5,5], [4,5], [3,5], [2,5], [1,5], [0,5], [0,4], [0,3], [1,3], [1,4]],
+                "COUNTYFAIR": [[7,5], [7,4], [6,3], [6,2], [5,3], [4,3], [3,3], [2,3], [1,2], [0,2]],
+            }
+        },
 ];
 
     const grid = document.getElementById("zands-grid");
@@ -255,6 +405,26 @@ document.addEventListener("DOMContentLoaded", () => {
             p.tile.classList.add(className);
         });
     }
+
+    // V2
+    const hintButton = document.getElementById("hint-button");
+    hintButton.addEventListener("click", () => {
+        const remainingWords = GAME_DATA.themeWords.filter(word => !foundWords.has(word));
+        if (remainingWords.length === 0) return;
+        const wordToReveal = remainingWords[Math.floor(Math.random() * remainingWords.length)];
+        const path = GAME_DATA.wordPaths[wordToReveal];
+        const tilesToHighlight = path.map(([r, c]) => {
+            return grid.querySelector(`div[data-row="${r}"][data-col="${c}"]`);
+        });
+        highlightWord(tilesToHighlight.map(tile => ({ tile })), "found-word");
+        foundWords.add(wordToReveal);
+        const li = themeWordsList.querySelector(`li[data-word="${wordToReveal}"]`);
+        if (li) {
+            li.textContent = wordToReveal;
+            li.classList.add("found");
+        }
+        checkWin();
+    });
 
     function checkWin() {
         if (foundWords.has(GAME_DATA.spangram) && GAME_DATA.themeWords.every(word => foundWords.has(word))) {

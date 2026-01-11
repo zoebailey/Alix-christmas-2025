@@ -12,25 +12,61 @@ document.addEventListener("DOMContentLoaded", () => {
             { category: "Our Favorite Resturaunts", words: ["Cheesecake Factory", "Olive Garden", "Waffle House", "Crab 99"] },
             { category: "Our Guys", words: ["Roger", "Earl", "Diva", "Baby Otter"] },
             { category: "Your Tattoos", words: ["Disco Ball", "Scorpion", "Peace Sign", "Stars"] },
-            { category: "Pet Names", words: ["Binga", "Sweet", "Love", "Baby"] }
+            { category: "Pet Names", words: ["Binga", "Sweet", "Love", "Baby"] },
+
+            // V2
+            { category: "Pink Things", words: ["Your Hair", "Giant Fuggler", "Flamingo", "Bubblegum"] },
+            { category: "Movies We've Seen Together", words: ["Wicked", "Spongebob", "Lilo and Stitch", "Wicked for Good"] },
+            { category: "Holidays at Hood", words: ["Winter Solstice", "Christmas", "Hanukkah", "Kwanzaa"] },
+            { category: "Ice Cream Flavors", words: ["Vanilla", "Chocolate", "Moose Tracks", "Chocolate Chip Cookie Dough"] },
+            { category: "People You've Seen in Concert", words: ["SZA", "Sabrina Carpenter", "Clairo", "Billie Eilish"] },
+            { category: "Car Decorations", words: ["Fuzzy Dice", "Decal", "Baby Fugglers", "Hanging Cowboy Disco Ball"] },
+            { category: "Desserts", words: ["Cheesecake", "Ice Cream", "Cookies", "Fudge"] }
         ],
         green: [
             { category: "Places We Have Been", words: ["Baltimore", "Washington", "Virginia", "Nashville"] },
             { category: "Love Symbols", words: ["Heart", "Kiss", "Cupid", "Roses"] },
             { category: "Decorations in your Apartment", words: ["Michael Jackson", "Katy Perry", "Cosmo", "Tapestry"] },
-            { category: "Ways to Take a Picture", words: ["iPhone", "Digi", "Mental", "Polaroid"] }
+            { category: "Ways to Take a Picture", words: ["iPhone", "Digi", "Mental", "Polaroid"] },
+
+            // V2
+            { category: "Pixar Characters", words: ["Woody", "Eve", "Dory", "Doug"] },
+            { category: "Things That Go in Hair", words: ["Beret", "Hairtie", "Bow", "Tinsel"] },
+            { category: "Apple Utilities", words: ["Camera", "Photos", "App Store", "Notes"] },
+            { category: "Websites", words: ["Blackboard", "Google", "YouTube", "ChatGPT"] },
+            { category: "Apple Products", words: ["Computer", "Phone", "Watch", "Tablet"] },
+            { category: "Types of Images", words: ["Digital", "Still", "Mental", "JPG"] },
+            { category: "Types of Focus on iPhone", words: ["Sleep", "Work", "Personal", "Do Not Disturb"] }
         ],
         blue: [
             { category: "Gifts You've Gotten Me", words: ["Tickets", "Flowers", "Mouse", "Calendar"] },
             { category: "Morgantown Places", words: ["Annex", "Ivy", "Happy's", "Joe's"] },
             { category: "Modes of Communication", words: ["Mail", "E-Mail", "Text", "FaceTime"] },
-            { category: "Frederick Streets", words: ["7th", "Patrick", "Market", "Panoma"] }
+            { category: "Frederick Streets", words: ["7th", "Patrick", "Market", "Panoma"] },
+
+            // V2
+            { category: "Words Spelled the Same Forwards and Backwards", words: ["Racecar", "Level", "Kayak", "Tacocat"] },
+            { category: "Types of Lights", words: ["Candle", "LED", "Flourescent", "Spot"] },
+            { category: "Furniture Stores", words: ["Ikea", "Ashley's", "Bob's", "Wayfair"] },
+            { category: "Mountains", words: ["Everest", "Kilimanjaro", "K2", "Makalu"] },
+            { category: "Nonvascular Plants", words: ["Moss", "Algae", "Liverworts", "Lichen"] },
+            { category: "Cities That Can Be Names", words: ["Savanna", "Paris", "Alexandria", "Austin"] },
+            { category: "Bridges", words: ["Brooklyn", "Golden Gate", "Lake Pontchartrain", "Bay"] }
         ],
         purple: [
             { category: "School Mascots", words: ["Blazer", "Hub", "Dragon", "Knight"] },
             { category: "Things We Did at the Beach", words: ["Seafood Boil", "Putt Putt", "Sunrise", "Aquarium"] },
             { category: "___ Sandwich", words: ["Knuckle", "Grilled Cheese", "Ham", "Club"] },
-            { category: "___ Max", words: ["Mad", "HBO", "Ava", "Air"] }
+            { category: "___ Max", words: ["Mad", "HBO", "Ava", "Air"] },
+
+            // V2
+            { category: "Ivy League Mascots", words: ["Tigers", "Crimson", "Bulldogs", "Quaker"] },
+            { category: "Members of One Direction", words: ["Harry", "Louis", "Liam", "Niall"] },
+            { category: "Football Positions", words: ["Quarter Back", "Safety", "Lineman", "Linebacker"] },
+            { category: "Comes in a Seafood Boil", words: ["Crab", "Eggs", "Sausage", "Shrimp"] },
+            { category: "Wedding Dress Styles", words: ["Mermaid", "Ballgown", "A-Line", "Trumpet"] },
+            { category: "Drumline Members", words: ["Snare", "Bass", "Quad", "Cymbals"] },
+            { category: "Places With a Disney Park", words: ["Orlando", "Aneheim", "Tokyo", "Paris"] }
         ]
     };
 
